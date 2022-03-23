@@ -1,20 +1,22 @@
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
 
 /**
- * print_alphabet_x10 - print the alphabet 10 time
- * Descreption: using _putchar
- * Return: Always 0.
- */
+* print_alphabet_x10 - Entry point
+*
+* Return: Always 0 (Success)
+*/
 void print_alphabet_x10(void)
 {
-	char c;
-	int i;
+	int x;
+	int y;
 
-	for (i = 1; i <= 10; i++)
+	for (x = 0; x <= 9; x++)
 	{
-		for (c = 'a'; c <= 'z'; c++)
+		for (y = 'a'; y <= 'z'; y++)
 		{
-			_putchar(c);
+			_putchar(y);
 		}
 		_putchar('\n');
 	}
